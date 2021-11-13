@@ -173,6 +173,7 @@ def update_app(on,n_clicks=0,n_intervals=0):
         linechart.update_xaxes(
             range=[startdate,enddate],
         )
+    linechart.update_yaxes(range=[0,df['cumulated_sum'].max()],)
     linechart.update_layout(
         title={
             'text': "Spendenverlauf",
